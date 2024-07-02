@@ -16,7 +16,7 @@ const App = () => {
       sx={{ px: { xs: 2, md: 10, lg: 15, xl: 60 } }}
     >
       <Grid item xs={12}>
-        <Navbar />
+        <Navbar currentTodos={currentTodos} setCurrentTodos={setCurrentTodos} />
       </Grid>
       <Grid item xs={12}>
         <Divider />
