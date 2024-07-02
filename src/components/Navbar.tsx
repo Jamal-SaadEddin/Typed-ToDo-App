@@ -28,7 +28,7 @@ const Navbar = ({ currentTodos, setCurrentTodos }: Props) => {
         direction="row"
         justifyContent="center"
         alignItems="center"
-        spacing={1}
+        spacing={2}
       >
         <Box>
           <img src={APP_LOGO} width={100} />
