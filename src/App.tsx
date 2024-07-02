@@ -13,20 +13,19 @@ const App = () => {
     <Grid
       container
       textAlign="center"
-      spacing={4}
+      spacing={3}
       sx={{ px: { xs: 2, md: 10, lg: 15, xl: 60 } }}
+      minHeight="100vh"
     >
       <Grid item xs={12}>
         <Navbar currentTodos={currentTodos} setCurrentTodos={setCurrentTodos} />
-      </Grid>
-      <Grid item xs={12}>
-        <Divider />
+        <Divider sx={{ mt: 5 }} />
         <ToDosList
           currentTodos={currentTodos}
           setCurrentTodos={setCurrentTodos}
         />
       </Grid>
-      <Grid item xs={12}>
+      <Grid item xs={12} alignSelf="end">
         <Footer />
       </Grid>
     </Grid>
