@@ -20,7 +20,10 @@ const App = () => {
       </Grid>
       <Grid item xs={12}>
         <Divider />
-        <ToDosList todos={currentTodos} />
+        <ToDosList
+          currentTodos={currentTodos}
+          setCurrentTodos={setCurrentTodos}
+        />
       </Grid>
     </Grid>
   );
