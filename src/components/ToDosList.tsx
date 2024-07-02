@@ -1,3 +1,4 @@
+import DeleteIcon from "@mui/icons-material/Delete";
 import DoneIcon from "@mui/icons-material/Done";
 import RedoIcon from "@mui/icons-material/Redo";
 import {
@@ -7,6 +8,7 @@ import {
   ListItem,
   ListItemAvatar,
   ListItemText,
+  Typography,
 } from "@mui/material";
 import React from "react";
 import ToDo from "../entities/ToDo";
@@ -24,11 +26,33 @@ const ToDosList = ({ currentTodos, setCurrentTodos }: Props) => {
     setCurrentTodos(updatedTodos);
   };
 
+  const handleDelete = (id: number) => {
+    const filteredTodos = currentTodos.filter((todo) => todo.id !== id);
+    setCurrentTodos(filteredTodos);
+  };
+
+  if (currentTodos.length === 0)
+    return (
+      <Typography variant="h6" mt={3}>
+        No To-Do items available!
+      </Typography>
+    );
+
   return (
     <List>
       {currentTodos.map((todo) => (
         <React.Fragment key={todo.id}>
-          <ListItem>
+          <ListItem
+            secondaryAction={
+              <IconButton
+                edge="end"
+                aria-label="delete"
+                onClick={() => handleDelete(todo.id)}
+              >
+                <DeleteIcon />
+              </IconButton>
+            }
+          >
             <ListItemAvatar>
               <IconButton
                 disableRipple
