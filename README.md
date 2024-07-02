@@ -1,30 +1,60 @@
-# React + TypeScript + Vite
+# Typed ToDo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a part of the Frontend internship program at [Foothill Technology Solutions](https://github.com/FoothillSolutions). The goal of this task is to create a React application using TypeScript, implementing interfaces for typing any passed props.
+## Overview
 
-Currently, two official plugins are available:
+The Typed ToDo App is a simple to-do list application where users can add, mark as completed, and delete to-do items. This project aims to provide hands-on experience with React and TypeScript, focusing on state management and component-based architecture.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **State Management**: Efficient state handling for adding, marking, and deleting to-do items.
+- **Display To-Do Items**: Render to-do items dynamically using the `map` method.
+- **Add To-Do Items**: Input field and button to add new to-do items.
+- **Mark as Completed**: Checkbox to mark to-do items as completed.
+- **Delete To-Do Items**: Ability to delete to-do items from the list.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technologies Used
 
-- Configure the top-level `parserOptions` property like this:
+- **React + TypeScript**: Core libraries for building the application.
+- **MUI**: Material-UI for designing user interfaces.
+- **Vite**: Build tool for faster and leaner development.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Demo
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+[Live Demo](https://jamal-saadeddin.github.io/Typed-ToDo-App/)
+
+## Installation
+
+Follow these steps to install and run the project on your local machine:
+
+1. **Clone the repository**:
+   ```sh
+   git clone https://github.com/Jamal-SaadEddin/Typed-ToDo-App.git
+   cd Typed-ToDo-App
+   ```
+
+2. **Install dependencies**:
+   ```sh
+   npm install
+   ```
+
+3. **Run the development server**:
+   ```sh
+   npm run dev
+   ```
+
+4. **Open your browser**:
+   Navigate to `http://localhost:5173` to see the application running.
+
+## Authors
+- [@Jamal-SaadEddin](https://github.com/Jamal-SaadEddin)
+
+## Acknowledgements
+- This task is part of the Foothill Technology Solutions Internship Cycle.
+- Big thanks to my trainer [@Huthaifa](https://github.com/Huthaifa-Dev)
+<img src="https://github.com/Jamal-SaadEddin/TodoTick/assets/104212352/9d3c83b0-5ea8-46ff-93e8-f1504af9dc67" width="400" alt="foothill logo">
+
+
+---
+
+Thank you for visiting my project! Feel free to star or contribute to the repository if you find it useful.
